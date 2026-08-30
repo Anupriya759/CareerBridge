@@ -1,0 +1,2 @@
+function renderSaved(){let ids=getSaved(),list=JOBS.filter(j=>ids.includes(j.id));qs('#savedJobs').innerHTML=list.length?list.map(jobCard).join(''):'<div class="info-card"><h3>No saved jobs yet</h3><p>Go to the Jobs page and click Save on a job you like.</p><a class="btn btn-primary" href="jobs.html" style="margin-top:15px">Browse jobs</a></div>'}
+document.addEventListener('DOMContentLoaded',renderSaved)
